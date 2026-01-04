@@ -1,0 +1,241 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.nav .left{
+    float: left;
+}
+.nav .right{
+    float: right;
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 9px 10px;
+    letter-spacing: 3px;
+    display: inline-block;
+}
+.nav{
+    background-color: white;
+    box-shadow:  0px 3px 4px #ccc;
+    padding: 6px 16px;
+    overflow: hidden;
+   
+}
+a:hover{
+    background-color: #f2f2f2;;
+}
+.home{
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://www.w3schools.com/w3images/hamburger.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.home p{
+    font-size: 40px;
+    color: #555;
+    letter-spacing: 5px;
+    position: absolute;
+    left: 30px;
+    bottom: 40px;
+}
+.about {
+    padding: 80px 100px;
+    overflow: hidden;
+}
+.about .left{
+    float: left;
+    width: 50%;
+
+}
+.about .left img{
+    width: 90%;
+    height: 100%;
+    border-radius: 5px;
+}
+.about .right{
+    float: right;
+    width: 50%;
+    
+}
+.about .right h2{
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 40px;
+    font-weight: lighter;
+}
+.about .right .first{
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 5px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.about .right .second{
+    font-size: 20px;
+    line-height: 30px;
+
+}
+.about .right .second span{
+    background-color: #f2f2f2;
+    padding: 3px;
+}
+.about .right .third{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #555;
+    line-height: 30px;
+}
+.Menu{
+    padding: 80px 100px;
+    overflow: hidden;
+
+}
+.Menu .left {
+    float: left;
+   
+  
+
+}
+.Menu .right{
+    float: right;
+}
+hr{
+  margin: auto;
+  width: 80%;
+}
+.Menu .left h2{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.Menu .left .one{
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin: 30px 0px;
+}
+.Menu .left .two{
+    color: #757575;
+}
+.Menu .right img{
+    border-radius: 5px;
+}
+.contact{
+    padding: 80px 100px;
+    overflow: hidden;
+}
+.contact .top h2{
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.contact .top p:nth-child(2){
+    margin-bottom: 15px;
+}
+.contact .top h4{
+    color: #607d8b;
+    margin-bottom: 15px;
+}
+.contact .bottom{
+    margin-top: 20px;
+}
+.contact .bottom form input{
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: #ccc 1px solid;
+}
+.contact .bottom form input:nth-child(5){
+    width: 150px;
+    border: none ;
+}
+.contact .bottom form input:nth-child(5):hover{
+    background-color: #b4b2b2;
+    cursor: pointer;
+}
+footer{
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+footer p a:hover{
+    background-color: rgb(172, 228, 209);
+}
+footer p a{
+    text-decoration: underline;
+}
+@media (max-width:767px){
+    .nav .right{
+        display: none !important;
+    }
+    .home{
+        height: 45vh;
+    }
+    .about .left{
+        display: none;
+    }
+    .about .right{
+        width: 100%;
+    }
+    .about , .Menu , .contact{
+        padding:80px 30px ;
+    }
+    .Menu .right , .Menu .left{
+      display: block;
+      width: 100%;
+      margin: auto;
+    }
+    .Menu .right img{
+        margin: auto;
+        width: 95%;
+        float: none;
+        display: block;
+        margin-top: 20px;
+
+    }
+}
+@media (min-width: 768px) and (max-width: 992px){
+
+
+
+    .about .left{
+        width: 50% !important;
+        height: 90vh;
+
+    }
+    .about .left img{
+        height: 100%;
+        
+    }
+    .about .right{
+        width: 50% !important;
+
+    }
+    .about , .Menu , .contact{
+        padding:80px 30px !important ;
+    }
+    .Menu .right , .Menu .left{
+      display: block;
+      width: 100%;
+      margin: auto;
+    }
+    .Menu .right img{
+        margin: auto;
+        width: 95%;
+        float: none;
+        display: block;
+        margin-top: 20px;
+
+
+    }
+
+}
